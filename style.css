@@ -1,0 +1,13 @@
+/* Klickbar knapp */
+.button {
+  padding: 10px 20px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* Svenska flaggan ikon */
+#sweden-icon {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+}
