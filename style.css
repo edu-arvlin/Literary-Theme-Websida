@@ -5,9 +5,11 @@
   cursor: pointer;
 }
 
-/* Svenska flaggan ikon */
-#sweden-icon {
+/* Ändra på språk knappar */
+.LanguageIcon {
   width: 100px;
   height: auto;
   max-width: 100%;
+  border: none;
+  vertical-align: middle;
 }
