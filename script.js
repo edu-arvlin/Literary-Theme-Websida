@@ -7,7 +7,7 @@ function updateText() {
 
     if (Swedish) {
         document.getElementById("title").textContent = "Välkommen";
-        document.getElementById("text").textContent = "Detta är min hemsida.";
+        document.getElementById("text").textContent = "Detta är en hemsida.";
         document.getElementById("button").textContent = "English";
     } 
     else {
