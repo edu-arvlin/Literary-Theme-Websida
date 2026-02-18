@@ -8,12 +8,12 @@ function updateText() {
     if (Swedish) {
         document.getElementById("title").textContent = "Välkommen";
         document.getElementById("text").textContent = "Detta är en hemsida.";
-        document.getElementById("button").textContent = "English";
+        console.log("Swedish is true, text updated to Swedish.");
     } 
     else {
         document.getElementById("title").textContent = "Welcome";
-        document.getElementById("text").textContent = "This is my website.";
-        document.getElementById("button").textContent = "Svenska";
+        document.getElementById("text").textContent = "This is a website.";
+        console.log("Swedish is false, text updated to English.");
     }
 }
 

@@ -7,24 +7,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="title">Välkommen</h1>
-    <p id="text">Detta är en hemsida.</p>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <h1>Test titel</h1>
+      </div>
+      <div class="flags">
+        <input
+          id="SwedenButton"
+          class="LanguageIcon"
+          type="image"
+          src="SwedenIcon.png"
+          alt="Svenska"
+        />
+        <input
+          id="UKButton"
+          class="LanguageIcon"
+          type="image"
+          src="UKIcon.png"
+          alt="English"
+        />
+      </div>
+    </div>
 
-    <!-- ändra språk knappar-->
-    <input
-      id="SwedenButton"
-      class="LanguageIcon"
-      type="image"
-      src="SwedenIcon.png"
-      alt="Svenska"
-    />
-    <input
-      id="UKButton"
-      class="LanguageIcon"
-      type="image"
-      src="UKIcon.png"
-      alt="English"
-    />
+    <div class="page-wrapper">
+      <div class="page-top">
+        <h2 id="title">Välkommen</h2>
+        <p id="text">Detta är en hemsida.</p>
+      </div>
+    </div>
+
+    <div class="blocks-container">
+      <section class="block" id="block1">
+        <p class="block-text">test 1</p>
+      </section>
+      <section class="block" id="block2">
+        <p class="block-text">test 2</p>
+      </section>
+      <section class="block" id="block3">
+        <p class="block-text">test 3</p>
+      </section>
+      <section class="block" id="block4">
+        <p class="block-text">test 4</p>
+      </section>
+      <section class="block" id="block5">
+        <p class="block-text">test 5</p>
+      </section>
+    </div>
 
     <script src="script.js"></script>
   </body>

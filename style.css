@@ -1,15 +1,84 @@
-/* Klickbar knapp */
-.button {
-  padding: 10px 20px;
-  font-size: 10px;
-  cursor: pointer;
+html {
+  scroll-behavior: smooth;
 }
 
 /* Ändra på språk knappar */
 .LanguageIcon {
-  width: 100px;
+  width: 32px;
   height: auto;
-  max-width: 100%;
+  max-width: none;
   border: none;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Fixed top bar sak */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background: #d8d8d8;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Lägger alla block under top baren under baren (64 px just nu iaf) */
+body {
+  padding-top: 64px;
+}
+
+.page-wrapper {
+  display: flex;
+}
+
+.page-top {
+  width: 25vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding-top: 24vh;
+  position: relative;
+}
+
+/* Flexbox */
+.blocks-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  box-sizing: border-box;
+  border-top: 1px solid #eee;
+}
+
+.block:nth-child(odd) {
+  background: #fafafa;
+}
+
+.block:nth-child(even) {
+  background: #ffffff;
+}
+
+.block-text {
+  font-size: 16px;
+  color: #333;
 }
