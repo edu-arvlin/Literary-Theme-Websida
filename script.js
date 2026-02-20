@@ -17,14 +17,14 @@ function updateText() {
     }
 }
 
-swedenButton.addEventListener("click", function() {
+swedenButton.onclick = function() {
     Swedish = true;
     updateText();
-});
+};
 
-ukButton.addEventListener("click", function() {
+ukButton.onclick = function() {
     Swedish = false;
     updateText();
-});
+};
 
 
