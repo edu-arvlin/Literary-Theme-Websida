@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Ändra på språk knappar */
+/* ändra på språk knappar */
 .LanguageIcon {
   width: 32px;
   height: auto;
@@ -12,7 +12,7 @@ html {
   cursor: pointer;
 }
 
-/* Fixed top bar sak */
+/* fixed top bar sak */
 .top-bar {
   position: fixed;
   top: 0;
@@ -21,21 +21,27 @@ html {
   height: 64px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 16px;
   background: #d8d8d8;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-  /* z-index för att göra att den ligger över allt annat */
+  /* z-index till något högt för att göra att den ligger över allt annat */
   z-index: 1000;
 }
 
+.top-bar-left {
+  text-align: center;
+}
+
 .flags {
+  position: absolute;
+  right: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-/* Lägger alla block under top baren under baren (64 px just nu iaf) */
+/* lägger alla block under top baren under baren (64 px just nu iaf) */
 body {
   padding-top: 64px;
 }
@@ -45,15 +51,17 @@ body {
 }
 
 .page-top {
-  width: 25vw;
+  width: 43vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 24vh;
+  padding-top: 8vh;
+  padding-left: 32px;
+  padding-right: 32px;
   position: relative;
 }
 
-/* Flexbox */
+/* flexbox layout*/
 .blocks-container {
   display: flex;
   flex-direction: column;
