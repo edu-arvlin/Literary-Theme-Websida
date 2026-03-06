@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,7 +28,7 @@ html {
   height: 64px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0 16px;
   background: #d8d8d8;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
@@ -30,7 +37,8 @@ html {
 }
 
 .top-bar-left {
-  text-align: center;
+  text-align: left;
+  padding-left: 16px;
 }
 
 .flags {
@@ -41,9 +49,9 @@ html {
   gap: 8px;
 }
 
-/* lägger alla block under top baren under baren (64 px just nu iaf) */
+/* avstånd mellan top bar och resten av sidan */
 body {
-  padding-top: 64px;
+  padding-top: 24px;
 }
 
 .page-wrapper {
@@ -59,6 +67,21 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   position: relative;
+}
+#toptitle {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+#title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+}
+#text {
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
 }
 
 /* flexbox layout*/
