@@ -53,11 +53,13 @@ html {
 
 /* avstånd mellan top bar och resten */
 body {
-  padding-top: 24px;
+  margin: 0;
+  padding-top: 64px;
 }
 
 .page-wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 .page-top {
@@ -86,7 +88,19 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* flexbox layout*/
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-text {
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+}
+
+/* flexbox layout */
 .blocks-container {
   display: flex;
   flex-direction: column;
@@ -95,15 +109,17 @@ body {
 .block {
   min-height: calc(100vh - 64px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
-  padding: 32px 0;
+  padding: 8vh 32px 32px;
   box-sizing: border-box;
   border-top: 1px solid #eee;
 }
 
 #block1 {
-  background: #fafafa;
+  background: #3a826b;
+  color: #ffffff;
 }
 
 #block2 {
@@ -111,7 +127,8 @@ body {
 }
 
 #block3 {
-  background: #fafafa;
+  background: #3a826b;
+  color: #ffffff;
 }
 
 #block4 {
@@ -119,7 +136,8 @@ body {
 }
 
 #block5 {
-  background: #fafafa;
+  background: #3a826b;
+  color: #ffffff;
 }
 
 .block-text {
