@@ -30,7 +30,8 @@ html {
   align-items: center;
   justify-content: flex-start;
   padding: 0 16px;
-  background: #d8d8d8;
+  background: #3a826b;
+  color: #ffffff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   /* z-index till något högt för att göra att den ligger över allt annat */
   z-index: 1000;
@@ -49,7 +50,7 @@ html {
   gap: 8px;
 }
 
-/* avstånd mellan top bar och resten av sidan */
+/* avstånd mellan top bar och resten */
 body {
   padding-top: 24px;
 }
