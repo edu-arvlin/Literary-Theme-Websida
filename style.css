@@ -6,8 +6,11 @@
   font-style: normal;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  /* gömmer allt utanför skärmen i x led */
+  overflow-x: hidden;
 }
 
 /* ändra på språk knappar */
@@ -69,8 +72,24 @@ body {
   flex-direction: column;
   padding-top: 8vh;
   padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 360px;
   position: relative;
+}
+
+.page-top-image {
+  position: absolute;
+  top: 14vh;
+  right: -190px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page-top-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 #toptitle {
   font-weight: bold;
@@ -89,9 +108,9 @@ body {
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -115,29 +134,108 @@ body {
   padding: 8vh 32px 32px;
   box-sizing: border-box;
   border-top: 1px solid #eee;
+  font-family: "Poppins", sans-serif;
 }
 
 #block1 {
   background: #3a826b;
-  color: #ffffff;
+  color: white;
+  width: 100vw;
 }
 
-#block2 {
+#block1 .block1-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+#block1 .block1-text {
+  flex: 0 1 600px;
+  max-width: 600px;
+  min-width: 320px;
+}
+
+#block1 .block1-images {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 0 0 auto;
+}
+
+#block1 .block1-images img {
+  height: auto;
+  border-radius: 8px;
+}
+
+#block1 .block1-images img.trevor {
+  width: 160px;
+}
+
+#block1 .block1-images img.defoe {
+  width: 400px;
+  margin-top: -29px;
+}
+
+#block2 .content {
+  display: flex;
+}
+#block2text {
   background: #ffffff;
+  width: 60vw;
+  padding-right: 5vw;
+}
+
+#block2 #apartheid-image {
+  width: 30vw;
 }
 
 #block3 {
   background: #3a826b;
-  color: #ffffff;
+  color: white;
+  width: 100vw;
+}
+
+#block3 .content {
+  display: flex;
+}
+
+#block3text {
+  width: 50vw;
+  padding-right: 3.5vw;
 }
 
 #block4 {
   background: #ffffff;
 }
 
+#block4 #block4text {
+  width: 50vw;
+  padding-right: 3.5vw;
+}
+
+#block4 #Neokolonialism {
+  width: 40vw;
+}
+
+#block4 .content {
+  display: flex;
+}
+
 #block5 {
   background: #3a826b;
-  color: #ffffff;
+  color: white;
+}
+#block5title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 5vw;
+}
+
+#Namn {
+  width: 100vw;
+  margin-top: -5vw;
 }
 
 .block-text {
